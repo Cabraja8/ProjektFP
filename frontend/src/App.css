@@ -1,0 +1,21 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.controls {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.chart-wrapper {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.display-chart{
+  border: 4px solid black; 
+  padding: 10px; 
+  border-radius: 10px; 
+}
