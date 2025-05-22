@@ -20,4 +20,4 @@ Matej Kurevija
 [Fakultet informatike u Puli](https://fipu.unipu.hr/)
 
 [Funkcijsko Programiranje]([http://ntankovic.unipu.hr/pi](https://moodle.srce.hr/2024-2025/course/view.php?id=215172)), ak.god. 2024./2025.  
-Mentor: **Siniša Miličić** ([https://fipu.unipu.hr/fipu/nikola.tankovic](https://fipu.unipu.hr/fipu/sinisa.milicic), sinisa.milicic@unipu.hr)
+Mentor: **Siniša Miličić** 
