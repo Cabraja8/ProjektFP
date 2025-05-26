@@ -27,7 +27,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-        <p className="text-center text-body-secondary">© 2025 PR-FP Real-time data</p>
+        <p className="text-center text-body-secondary">© 2030 PR-FP Real-time data</p>
       </footer>
     </div>
   );
