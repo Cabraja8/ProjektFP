@@ -8,7 +8,7 @@ const Footer = () => {
         
           <li className="nav-item">
             <a
-              href="https://github.com/emirkovic/Real-Time-Stock-Analyzer"
+              href="https://github.com/Cabraja8/ProjektFP"
               className="nav-link"
               target="_blank"
               rel="noopener noreferrer"
