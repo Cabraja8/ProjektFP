@@ -17,5 +17,7 @@ executable backend
       aeson          >=1.4,
       text           >=1.2,
       time           >=1.8,
-      random         >=1.2
+      random         >=1.2,
+      bytestring,        
+      http-conduit        
   ghc-options:         -Wall
