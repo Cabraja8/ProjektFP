@@ -1,6 +1,7 @@
 # Real Time Data
 
 Aplikacija predstavlja jednostavan alat za analizu burzovnih dionica, kriptovaluta i seizmičkih podataka u stvarnom vremenu, razvijen korištenjem funkcijskog programiranja u programskom jeziku Haskell.  
+
 Cilj projekta je omogućiti korisnicima uvide u aktualna tržišna kretanja putem intuitivnog i učinkovitog sučelja.
 
 ---
@@ -13,7 +14,7 @@ Cilj projekta je omogućiti korisnicima uvide u aktualna tržišna kretanja pute
 
 ---
 
-## 📍 Institucija
+## 📍 Organizacija
 
 [Sveučilište Jurja Dobrile u Puli](http://www.unipu.hr/)  
 [Fakultet informatike u Puli](https://fipu.unipu.hr/)
@@ -28,5 +29,5 @@ Cilj projekta je omogućiti korisnicima uvide u aktualna tržišna kretanja pute
 
 ## 👨‍🏫 Mentor
 
-**Siniša Miličić**
+**doc. dr. sc. Siniša Miličić**
 
