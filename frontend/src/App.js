@@ -165,11 +165,7 @@ export default function App() {
 
   const totalValue = data.reduce((acc, curr) => acc + curr.value, 0);
 
-  const handleLegendClick = dataKey => {
-    setActiveSeries(prev =>
-      prev.includes(dataKey) ? prev.filter(k => k !== dataKey) : [...prev, dataKey]
-    );
-  };
+ 
 
   return (
     <div className="container">
@@ -346,15 +342,8 @@ export default function App() {
                     return null;
                   }}
                 />
-                <Legend
-                  payload={[
-                    { value: 'UV', type: 'circle', color: '#8884d8', dataKey: 'uv' },
-                    { value: 'PV', type: 'circle', color: '#82ca9d', dataKey: 'pv' }
-                  ]}
-                  onClick={e => handleLegendClick(e.dataKey)}
-                />
-                <Line hide={activeSeries.includes('uv')} type="monotone" dataKey="uv" stroke="#8884d8" />
-                <Line hide={activeSeries.includes('pv')} type="monotone" dataKey="pv" stroke="#82ca9d" />
+               
+               <Line type="monotone" dataKey="value" stroke="#8884d8" />
               </LineChart>
             )}
 
@@ -384,15 +373,8 @@ export default function App() {
                     return null;
                   }}
                 />
-                <Legend
-                  payload={[
-                    { value: 'UV', type: 'square', color: '#8884d8', dataKey: 'uv' },
-                    { value: 'PV', type: 'square', color: '#82ca9d', dataKey: 'pv' }
-                  ]}
-                  onClick={e => handleLegendClick(e.dataKey)}
-                />
-                <Bar hide={activeSeries.includes('uv')} dataKey="uv" fill="#8884d8" />
-                <Bar hide={activeSeries.includes('pv')} dataKey="pv" fill="#82ca9d" />
+                
+              <Bar type="monotone" dataKey="value" stroke="#8884d8" />
               </BarChart>
             )}
 
@@ -463,15 +445,8 @@ export default function App() {
                     return null;
                   }}
                 />
-                <Legend
-                  payload={[
-                    { value: 'UV', type: 'square', color: '#8884d8', dataKey: 'uv' },
-                    { value: 'PV', type: 'square', color: '#82ca9d', dataKey: 'pv' }
-                  ]}
-                  onClick={e => handleLegendClick(e.dataKey)}
-                />
-                <Area hide={activeSeries.includes('uv')} type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
-                <Area hide={activeSeries.includes('pv')} type="monotone" dataKey="pv" stroke="#82ca9d" fill="#82ca9d" />
+                
+               <Area type="monotone" dataKey="value" stroke="#8884d8" />
               </AreaChart>
             )}
 
@@ -489,22 +464,7 @@ export default function App() {
                 <PolarGrid />
                 <PolarAngleAxis dataKey="displayTime" />
                 <PolarRadiusAxis />
-                <Radar
-                  name="UV"
-                  dataKey="uv"
-                  stroke="#8884d8"
-                  fill="#8884d8"
-                  fillOpacity={0.6}
-                  hide={activeSeries.includes('uv')}
-                />
-                <Radar
-                  name="PV"
-                  dataKey="pv"
-                  stroke="#82ca9d"
-                  fill="#82ca9d"
-                  fillOpacity={0.6}
-                  hide={activeSeries.includes('pv')}
-                />
+              <Radar type="monotone" dataKey="value" stroke="#8884d8" />
                 <Tooltip
                   content={({ active, payload }) => {
                     if (active && payload && payload.length) {
@@ -525,13 +485,7 @@ export default function App() {
                     return null;
                   }}
                 />
-                <Legend
-                  payload={[
-                    { value: 'UV', type: 'circle', color: '#8884d8', dataKey: 'uv' },
-                    { value: 'PV', type: 'circle', color: '#82ca9d', dataKey: 'pv' }
-                  ]}
-                  onClick={e => handleLegendClick(e.dataKey)}
-                />
+                
               </RadarChart>
             )}
           </ResponsiveContainer>
